@@ -1,0 +1,252 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Airline Website | Services</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<style>
+        /* Style for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+    </style
+</head>
+
+<body>
+	<!---start-Wrap--->
+	<!---start-header--->
+	<div class="header">
+		<div class="wrap">
+			<div class="header-top">
+				<div class="logo">
+					<h1>AIRLINE SYSTEM</h1>
+					<!-- <a href="index.html"><img src="images/logo2.png" title="logo" /></a> -->
+				</div>
+				<div class="contact-info">
+					<p class="phone">Call us : <a href="#">03169199684</a></p>
+
+					<p class="code">CREATED BY:<a
+							href=https://www.facebook.com/profile.php?id=100048947837814&mibextid=2JQ9oc>MUHAMMAD USMAN</a></p>
+					<p class="code">Email Us:<a
+						href=https://mail.google.com/mail/u/0/#inbox>mu37368@gmail.com</a></p>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<div class="header-top-nav">
+			<div class="wrap">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="active"><a href="services.html">Services</a></li>
+					<!-- <li><a href="gallery.html">Gallery</a></li> -->
+					<li><a href="contact.html">Contact</a></li>
+					<div class="clear"> </div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!---End-header--->
+	<div class="clear"> </div>
+	<!---start-content----->
+	<div class="content">
+		<div class="wrap">
+			<!-----start--services------>
+			<div class="services">
+				<div class="service-content">
+					<h3> Airline Services</h3>
+					<ul>
+						<li><span>1.</span></li>
+						<li>
+							<p><a href="#">In-Flight Entertainment (IFE): </a> Movies, TV shows, music, games, and other
+								entertainment options available on personal screens or shared monitors.</p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+					<ul>
+						<li><span>2.</span></li>
+						<li>
+							<p><a href="#">Comfort Items</a> Blankets, pillows, earplugs, and eye masks to help
+								passengers rest during long flights.
+								. .. . . </p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+					<ul>
+						<li><span>3.</span></li>
+						<li>
+							<p><a href="#">Wi-Fi and Connectivity</a> Some flights offer onboard Wi-Fi for internet
+								access, allowing passengers to stay connected during the flight (may be a paid service
+								on some airlines). </p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+					<ul>
+						<li><span>4.</span></li>
+						<li>
+							<p><a href="#">Special Assistance</a> Services for passengers with reduced mobility,
+								disabilities, or medical conditions, including pre-boarding assistance and specialized
+								seating..</p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+					<ul>
+						<li><span>5.</span></li>
+						<li>
+							<p><a href="#">Safety Demonstrations</a>Pre-flight safety demonstrations explaining the use
+								of emergency equipment, exits, and procedures.</p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+					<ul>
+						<li><span>6.</span></li>
+						<li>
+							<p><a href="#">Language Assistance</a> In-flight announcements and materials may be
+								available in multiple languages to accommodate diverse passengers. </p>
+						</li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				
+				<div class="clear"> </div>
+			</div>
+			<!-----End--services------>
+		</div>
+		<div class="clear"> </div>
+		<div class="boxs">
+			<!--div class="wrap">
+				<div class="box"--->
+
+				</div>
+				<div class="col span_2_of_3">
+					<div class="contact-form">
+						<h3>Flight Booking</h3>
+						<form id="bookingForm">
+							<label for="id">Aeroplane ID:</label>
+							<input type="number" id="aeroid" name="aeroid" required><br><br>
+
+							<label for="seatno">Seat No:</label>
+							<input type="number" id="seatno" name="seatno" required><br><br>
+
+							<label for="departureCity">Departure City/Country:</label>
+							<input type="text-120px" id="departureCity" name="departureCity" required><br><br>
+							
+							<label for="destinationCity">Destination City/Country:</label>
+							<input type="text-120px" id="destinationCity" name="destinationCity" required><br><br>
+							
+							<label for="departureDate">Departure Date:</label>
+							<input type="date" id="departureDate" name="departureDate" required><br><br>
+							
+							<label for="returnDate">Return Date:</label>
+							<input type="date" id="returnDate" name="returnDate"><br><br>
+							
+							<label for="passengers">Number of Passengers:</label>
+							<input type="number" id="passengers" name="passengers" min="1" required><br><br>
+							
+							<button type="button" id="submitButton">Submit</button>
+						</form>
+						
+						<script>
+						document.getElementById("submitButton").addEventListener("click", function() {
+							var aeroid = document.getElementById("aeroid").value;
+							var seatno = document.getElementById("seatno").value;
+							var departureCity = document.getElementById("departureCity").value;
+							var destinationCity = document.getElementById("destinationCity").value;
+							var departureDate = document.getElementById("departureDate").value;
+							var returnDate = document.getElementById("returnDate").value;
+							var passengers = document.getElementById("passengers").value;
+							
+							if (aeroid && seatno && departureCity && destinationCity && departureDate && passengers) {
+								alert("Booking successful!\n\n" +
+								"Aeroplane ID: " + aeroid + "\n" +
+								"Seat No: " + seatno + "\n" +
+								"Departure City: " + departureCity + "\n" +
+								"Destination City: " + destinationCity + "\n" +
+								"Departure Date: " + departureDate + "\n" +
+								"Return Date: " + returnDate + "\n" +
+								"Passengers: " + passengers);
+							} else {
+								alert("Please fill out all required fields");
+							}
+						});
+						</script>
+
+					</div>
+				</div>
+				<div class="clear"> </div>
+				<div class="boxs">
+					<div class="wrap">
+						<div class="box">
+
+						</div>
+				<div class="box right-box">
+						<button id="feedbackButton">Feedback</button>
+
+								<div class="modal" id="feedbackModal">
+									<div class="modal-content">
+										
+										<form id="feedbackForm">
+											<label for="feedback">Your Feedback:</label><br>
+											<textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+											<button type="submit">Submit Feedback</button> <button id="closeModal">Close</button>
+										</form><br>
+										
+									</div>
+								</div>
+                            <script>
+								const feedbackButton = document.getElementById("feedbackButton");
+								const feedbackModal = document.getElementById("feedbackModal");
+								const closeModal = document.getElementById("closeModal");
+								
+								feedbackButton.addEventListener("click", function() {
+									feedbackModal.style.display = "block";
+								});
+								
+								closeModal.addEventListener("click", function() {
+									feedbackModal.style.display = "none";
+								});
+								
+								document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+									event.preventDefault();
+									const feedback = document.getElementById("feedback").value;
+									// You can handle the feedback submission here (e.g., send it to a server)
+									alert("Thank you for your feedback:\n" + feedback);
+									feedbackModal.style.display = "none";
+								});
+								</script>
+								</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="clear"> </div>
+			<!---start-copy-Right----->
+			<div class="copy-tight">
+				<p>Created by Muhammad Usman <a href=""></a></p>
+			</div>
+			<!---End-copy-Right----->
+		</div>
+		<!---End-content----->
+	</div>
+	<!---End-Wrap--->
+</body>
+</html>
